@@ -46,7 +46,7 @@ background-color: rgb(255, 255, 255);;
 
 display: grid;
 
-height: 240vh;
+height: 250vh;
 gap: 5%;
 
 grid-template-rows: 10% 75% 15%;
@@ -212,4 +212,171 @@ footer div{
 .header-border-animated {
     border-bottom: 2px solid var(--color-dark);
     transition: border-bottom 0.3s ease-in-out;
+}
+
+
+#about-page{
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.about-logo{
+    color: var(--color-dark);
+    font-family: var(--font1);
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   letter-spacing: 5px;
+   font-weight: 500;
+   gap: 55px;
+}
+.about-logo-text{
+    letter-spacing:normal;
+    font-size: 1.2rem;
+    color: var(--color-gray-dark);
+    text-align: center;
+   width: 80%;
+   max-width: 80rem;
+    line-height:50px;
+    font-weight: normal;
+   
+  
+    font-family: var(--font2);
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    
+
+}
+.about-chef{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    align-items: ;
+    
+}
+.about-chef-header{
+    color: var(--color-dark);
+    font-size: 2rem;
+    font-family: var(--font2);
+    font-weight: 500;
+  
+}
+
+.about-chef-section , .about-chef-footer{
+    font-size: 1rem;
+    color: var(--color-gray-dark);
+    
+   width: 80%;
+   max-width: 80rem;
+    line-height:40px;
+   
+  
+    font-family: var(--font2);
+
+}
+.about-chef-footer{
+    margin-top: 20px;
+}
+
+.chef{
+    height:40% ;
+    width: 80%;
+    max-width: 500px;
+}
+.chef-image-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+#menu-container{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    
+    font-family: var(--font2);
+    justify-items: center;
+    gap: 100px;
+}
+
+
+.menu-category{
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+   
+  
+ 
+    
+    
+}
+.menu-category div{
+    
+    width: 100%;
+    
+}
+
+.menu-header{
+    font-size: 3rem;
+    font-family: var(--font2);
+    font-weight: ;
+    margin-bottom: 50px;
+    text-align: center;
+   
+}
+.menu-section-header{
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    font-weight: 500;
+    font-family: var(--font2);
+
+}
+
+.menu-category  .menu-section-elements{
+   
+   
+    color: var(--color-gray-dark);
+   
+   
+}
+.menu-section-elements .food{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.menu-section-elements .description{
+    font-size: 1rem;
+    
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ .food .price{
+    
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: fit-content;
+    
+}
+
+.food{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
 }

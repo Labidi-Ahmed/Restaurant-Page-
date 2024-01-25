@@ -41,5 +41,5 @@ export function generateHomePage() {
     homeContainer.appendChild(img);
 
     // Append section to body
-    body.appendChild(homeContainer);
+    return homeContainer ;
 }

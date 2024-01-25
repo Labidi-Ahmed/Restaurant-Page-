@@ -14,14 +14,68 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 import { generateHomePage } from "./modules/homepage.js";
-
+import { generateAboutPage } from "./modules/about.js";
+import { generateMenuPage } from "./modules/menu.js";
 const logo = document.querySelector("#logo");
+const about = document.querySelector("#about");
+const pageContainer = document.querySelector(".page-container");
+const menu = document.querySelector("#menu");
+const aboutUs = document.querySelector(".container-btn");
 
 
-    logo.addEventListener('click',() =>{
-        const homeContainer = document.querySelector("#home-container");
-        if (!homeContainer){
-            generateHomePage();
-        }
+ function loadThePageContainer(container){
+if (pageContainer.id != container.id){
+    pageContainer.id =container.id;
+    pageContainer.innerHTML = container.innerHTML;
+    console.log("finished");
+   
+
+}
+else{
+    return false
+}
+}
+
+
+logo.addEventListener('click',() =>{
+    const homeContainer = generateHomePage();
+    loadThePageContainer(homeContainer);
+    const aboutUs = document.querySelector(".container-btn");
+    if( aboutUs !=null ){
+       
+        
+        aboutUs.addEventListener('click',() =>{
+            const aboutContainer = generateAboutPage();
+            loadThePageContainer(aboutContainer);
+            
+            
+        });
+       
+    }
+    
+});
+
+
+    about.addEventListener('click',() =>{
+        const aboutContainer = generateAboutPage();
+        loadThePageContainer(aboutContainer);
+        
     });
+
+
+   
+
+
+menu.addEventListener('click', () =>{
+    const menuContainer = generateMenuPage();
+    loadThePageContainer(menuContainer);
+})
+
+
+aboutUs.addEventListener('click',() =>{
+    const aboutContainer = generateAboutPage();
+    loadThePageContainer(aboutContainer);
+   
+    
+});
 
