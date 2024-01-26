@@ -1,3 +1,6 @@
+import chefImg from  '../images/chef.png';
+
+
 export function generateAboutPage() {
     // Get the body element
     const body = document.querySelector("body");
@@ -33,7 +36,7 @@ export function generateAboutPage() {
     // Create an image element for the chef
     const chef = document.createElement('img');
     chef.classList.add("chef");
-    chef.src = "./images/male-chef-plating-food-plate-while-working-commercial-kitchen_763111-6726.avif";
+    chef.src = chefImg ;
 
     // Append chef image to its container
     chefImageContainer.appendChild(chef);

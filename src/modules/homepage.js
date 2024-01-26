@@ -1,3 +1,5 @@
+import homeImg from '../images/homeImg.jpg'
+
 export function generateHomePage() {
     const body = document.querySelector("body");
     const text = "At Serenade Bistro, we embrace the artistry of coffee. Our passion goes beyond the ordinary, where every cup is crafted with precision—melding time, temperature, and technique to create the perfect blend. Our devotion extends to the beans, meticulously roasted to perfection, ensuring each sip is an experience worth savoring.";
@@ -32,7 +34,7 @@ export function generateHomePage() {
 
     // Create img element
     const img = document.createElement('img');
-    img.src = "./images/pexels-edward-eyer-1049626.jpg";
+    img.src = homeImg;
     img.classList.add("container-img");
 
     // Append child elements to section

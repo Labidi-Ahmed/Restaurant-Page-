@@ -16,11 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
 import { generateHomePage } from "./modules/homepage.js";
 import { generateAboutPage } from "./modules/about.js";
 import { generateMenuPage } from "./modules/menu.js";
+import './styles/reset.css';
+import './styles/style.css'
+import homeImg from './images/homeImg.jpg';
+
 const logo = document.querySelector("#logo");
 const about = document.querySelector("#about");
 const pageContainer = document.querySelector(".page-container");
 const menu = document.querySelector("#menu");
 const aboutUs = document.querySelector(".container-btn");
+const containerImg = document.querySelector(".container-img");
+
+
+if(containerImg){
+    containerImg.src = homeImg ;
+}
 
 
  function loadThePageContainer(container){
@@ -78,4 +88,3 @@ aboutUs.addEventListener('click',() =>{
    
     
 });
-
