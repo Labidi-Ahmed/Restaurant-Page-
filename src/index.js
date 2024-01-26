@@ -19,13 +19,14 @@ import { generateMenuPage } from "./modules/menu.js";
 import './styles/reset.css';
 import './styles/style.css'
 import homeImg from './images/homeImg.jpg';
-
+import { generateContactPage } from "./modules/contact.js";
 const logo = document.querySelector("#logo");
 const about = document.querySelector("#about");
 const pageContainer = document.querySelector(".page-container");
 const menu = document.querySelector("#menu");
 const aboutUs = document.querySelector(".container-btn");
 const containerImg = document.querySelector(".container-img");
+const contact = document.querySelector("#contact");
 
 
 if(containerImg){
@@ -87,4 +88,12 @@ aboutUs.addEventListener('click',() =>{
     loadThePageContainer(aboutContainer);
    
     
+});
+
+contact.addEventListener('click',() =>{
+    const contactContainer = document.createElement('div');
+    contactContainer.innerHTML = generateContactPage();
+    contactContainer.id='contact-container';
+    
+   loadThePageContainer(contactContainer);
 });
