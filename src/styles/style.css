@@ -344,7 +344,7 @@ footer div {
     display: flex;
     flex-direction: column;
     width: 60%;
-    min-width: 280px;
+    min-width: 300px;
    
   
  
@@ -360,7 +360,7 @@ footer div {
 .menu-header{
     font-size: 3rem;
     font-family: var(--font2);
-    font-weight: ;
+    font-weight: 500;
     margin-bottom: 50px;
     text-align: center;
    
@@ -677,17 +677,21 @@ iframe{
 }
 
 @media ( height <= 850px ) {
-/* .menu-section-header{
-font-size: 1rem;
 
-}
-.menu-header{
+   .food .price{
+    font-size: 0.9rem;
+   }
+
+   .menu-header{
+    font-size: 2rem;
+    font-weight: 500;
+   }
+   .menu-section-header{
     font-size: 1.5rem;
-}
- 
-.menu-section-header{
-    font-size: 0.8rem;
-} */
+   }
+
+
+    
  body{
     height: 330vh;
  }
