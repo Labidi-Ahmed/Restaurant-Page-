@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var header = document.querySelector("header");
+    const header = document.querySelector("header");
 
+    const handleScroll = () => {
+        const isScrolled = window.scrollY > 0;
+        header.classList.toggle("header-border-animated", isScrolled);
+    };
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 0) {
-            header.classList.add("header-border-animated");
-        } else {
-            header.classList.remove("header-border-animated");
-        }
-    });
+    window.addEventListener("scroll", handleScroll);
 });
 
 
