@@ -60,7 +60,7 @@ export function generateContactPage() {
         </div>
     </div>
         <div class="map">
-            <div style="width: 100%; height: 100%;" ><iframe width="80%" height="80%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="${googleMapSrc}"><a href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
+            <div  style="width: 100%;  height: 100%;" ><iframe width="100%" height="80%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="${googleMapSrc}"><a href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
         </div>
         <form class="contact-form">
             <div class="form-header">BOOKINKS</div>

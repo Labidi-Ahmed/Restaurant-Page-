@@ -77,7 +77,7 @@ logo.addEventListener('click',() =>{
 
 
 menu.addEventListener('click', () =>{
-    const menuContainer = generateHomePage();
+    const menuContainer = generateMenuPage();
     loadThePageContainer(menuContainer);
 })
 

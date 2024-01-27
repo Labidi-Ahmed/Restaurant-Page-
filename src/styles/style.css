@@ -47,12 +47,13 @@ body{
 background-color: rgb(255, 255, 255);;
 
 display: grid;
-
 height: 250vh;
+
 gap: 5%;
 
 grid-template-rows: 10% 75% 15%;
-position: relative;
+
+
 
 
 }
@@ -65,7 +66,7 @@ position: relative;
 
     font-size: 1rem;
     font-family: var(--font2);
-    padding: 10px;
+    
     justify-self: center;
     justify-content: center;
     
@@ -103,6 +104,7 @@ position: relative;
     font-family: var(--font1) ;
     letter-spacing: 20px;
    font-weight: 500;
+   text-align: center;
 }
 
 .container-text{
@@ -110,6 +112,7 @@ position: relative;
     color: var(--color-gray-dark);
     text-align: center;
     width: 40%;
+    min-width: 300px;
     line-height:30px;
    
   
@@ -155,8 +158,9 @@ position: relative;
 
 .container-img{
     height: 50%;
-    width:90%;
-    max-width: 70rem;
+    max-height: 600px;
+    width:100%;
+    max-width: 900px;
     align-self: center;
     
     padding: 50px;
@@ -182,8 +186,6 @@ header{
     position:fixed;
     height: 10%;
     grid-row: 1/2;
-    z-index: ;
-
     background-color: var(--color-light);
   
    
@@ -191,7 +193,11 @@ header{
     
 }
 
-
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 footer {
     grid-row: 3/4;
     display: flex;
@@ -204,11 +210,13 @@ footer {
     font-size: 1rem;
     font-weight: 500;
 }
-footer div{
+footer div {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
 }
+
 
 
 .header-border-animated {
@@ -224,16 +232,24 @@ footer div{
     align-items: center;
     gap: 30px;
 }
+
+.about-logo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    
+    align-items: center;
+    width: 80%;
+}
 .about-logo{
     color: var(--color-dark);
     font-family: var(--font1);
     font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   letter-spacing: 5px;
+    letter-spacing: 5px;
+    text-align: center;
+
    font-weight: 500;
-   gap: 55px;
+   
 }
 .about-logo-text{
     letter-spacing:normal;
@@ -264,7 +280,10 @@ footer div{
     flex-direction: column;
     gap: 50px;
     padding: 20px;
-    align-items: ;
+    grid-column: 2/3;
+    grid-row: 1/2;
+   
+   
     
 }
 .about-chef-header{
@@ -292,8 +311,12 @@ footer div{
 }
 
 .chef{
-    height:40% ;
-    width: 80%;
+    height:60% ;
+    width: 90%;
+    
+    max-height: 700px;
+    min-width: 300px;
+    min-height: 450px;
     max-width: 600px;
 }
 .chef-image-container{
@@ -301,6 +324,8 @@ footer div{
    justify-content: center;
    align-items: center;
    height: 100%;
+   grid-column: 1/2;
+   
 }
 
 #menu-container{
@@ -319,6 +344,7 @@ footer div{
     display: flex;
     flex-direction: column;
     width: 60%;
+    min-width: 280px;
    
   
  
@@ -407,6 +433,7 @@ footer div{
     color: var(--color-dark);
     font-size: 1.2rem;
     font-weight: 500;
+    
 }
 
 .contact-info-section div{
@@ -420,6 +447,7 @@ footer div{
 .contact-info-section div .info-details{
     display: flex;
     flex-direction: column;
+    
     gap: 10px;
 }
 
@@ -428,6 +456,9 @@ footer div{
 }
 .info-details{
     font-size: 1.1rem;
+}
+.info-details div{
+    line-height: 20px;
 }
 .contact-form{
     grid-row: 2/3;
@@ -474,14 +505,220 @@ label{
 }
 
 .map{
-    width: 100%;
+    width: 80%;
     align-self: ;
     justify-self: start;
     grid-column: 2/3;
     grid-row: 1/2;
+    display: flex;
+    justify-content: start;
+    
+}
+.map div{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    
+    
 }
 
 .contact-section{
     grid-row: 1/2;;
     grid-column: 1/2;
+    width: 80%;
+}
+
+iframe{
+   
+    min-height: 600px;
+}
+
+
+@media ( width <= 911px ) {
+    .container-logo {
+        
+        font-size: 2rem;
+        letter-spacing: 10px;
+        
+    }
+    .about-logo{
+        
+        font-size: 1.5rem;
+    }
+
+    .container-text{
+        font-size: 1rem;
+        
+        
+        width: 40%;
+          
+    }
+
+
+    .about-logo-text{
+        font-size: 1rem;
+        
+        width: 100%;
+    }
+    header{
+ 
+        
+        justify-content: space-between;
+        
+        
+        
+        width: 100%;
+        align-items: center;
+        justify-self: ;
+        color: var(--color-gray-dark);
+        position:fixed;
+        height: 10%;
+        grid-row: 1/2;
+        
+      }
+
+
+      #logo , .footer-logo{
+        font-size: 1.4rem;
+        margin-left: 10px;
+    }
+    .list{
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .container-btn {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+
+
+
+    .about-chef-header{
+       
+        font-size: 1.1rem;
+       
+        font-weight: 500;
+      
+    }
+
+    .about-chef-section , .about-chef-footer{
+        font-size: 0.85rem;
+        color: var(--color-gray-dark);
+        
+       width: 100%;
+      
+        line-height:20px;
+       
+      
+    
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+
+    
+
+}
+
+@media ( width <= 850px )
+{
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .chef{
+       
+        
+       
+    }
+}
+
+
+
+@media( width <= 750px ){
+    body{
+        height: 300vh;
+    }
+   svg{
+    height: 50px;
+    width: 80px;
+
+   }
+   
+    footer{
+        flex-direction: column ;
+        align-items: center;
+        justify-content: start;
+        justify-content: start;
+        gap: 20px;
+        
+    }
+    footer div{
+        align-items: center;
+       
+
+    }
+    .footer-logo{
+        
+        flex-direction: row;
+        align-items: center;
+    }
+    .container-img{
+        height: 20%;
+    }
+   
+}
+
+@media ( height <= 850px ) {
+/* .menu-section-header{
+font-size: 1rem;
+
+}
+.menu-header{
+    font-size: 1.5rem;
+}
+ 
+.menu-section-header{
+    font-size: 0.8rem;
+} */
+ body{
+    height: 330vh;
+ }
+.menu-section-elements .food{
+    font-size: 1rem;
+ 
+}
+.menu-section-elements .description{
+    font-size: 0.8rem;
+    
+}
+
+
+}
+
+
+@media (width <= 972px){
+    #contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .map {
+        justify-content: center;
+    }
+    #iframe-container{
+        width: 100%;
+    }
+    .form-header{
+        font-size: 1.5rem;
+    }
+    .contact-info-section .info-category{
+        font-size: 1rem ;
+    }
+    .info-details{
+        font-size: 0.8rem;
+    }
 }
