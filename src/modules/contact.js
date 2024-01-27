@@ -1,5 +1,7 @@
 export function generateContactPage() {
-return `
+    const googleMapSrc = "https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=serenade%20bistro+(serenade%20bisto)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
+    
+    const contactContainerContent = `
 
     <div class="contact-section">
         <div class="contact-info-section">
@@ -42,7 +44,7 @@ return `
             <div>
                 <div class="info-category">Website</div>
                 <div class="info-details">
-                    <a href="http://www.serenaderestaurant.com" target="_blank">www.serenaderestaurant.com</a>
+                    <a href="" target="_blank">www.serenaderestaurant.com</a>
                 </div>
             </div>
     
@@ -58,7 +60,7 @@ return `
         </div>
     </div>
         <div class="map">
-            <div style="width: 100%; height: 100%;" ><iframe width="80%" height="80%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=serenade%20bistro+(serenade%20bisto)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
+            <div style="width: 100%; height: 100%;" ><iframe width="80%" height="80%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="${googleMapSrc}"><a href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
         </div>
         <form class="contact-form">
             <div class="form-header">BOOKINKS</div>
@@ -88,8 +90,9 @@ return `
             <button class="submit" type="submit">Submit</button>
         </form>
         
-    
-        
-   
 `
+    const contactContainer = document.createElement('div');
+    contactContainer.id='contact-container';
+    contactContainer.innerHTML = contactContainerContent;
+            return contactContainer;
 }

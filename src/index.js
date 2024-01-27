@@ -41,10 +41,9 @@ if (pageContainer.id != container.id){
     console.log("finished");
    
 
+
 }
-else{
-    return false
-}
+
 }
 
 
@@ -56,8 +55,8 @@ logo.addEventListener('click',() =>{
        
         
         aboutUs.addEventListener('click',() =>{
-            const aboutContainer = generateAboutPage();
-            loadThePageContainer(aboutContainer);
+         const aboutContainer = generateAboutPage();
+        loadThePageContainer(aboutContainer);
             
             
         });
@@ -78,22 +77,19 @@ logo.addEventListener('click',() =>{
 
 
 menu.addEventListener('click', () =>{
-    const menuContainer = generateMenuPage();
+    const menuContainer = generateHomePage();
     loadThePageContainer(menuContainer);
 })
 
 
 aboutUs.addEventListener('click',() =>{
     const aboutContainer = generateAboutPage();
-    loadThePageContainer(aboutContainer);
+        loadThePageContainer(aboutContainer);
    
     
 });
 
 contact.addEventListener('click',() =>{
-    const contactContainer = document.createElement('div');
-    contactContainer.innerHTML = generateContactPage();
-    contactContainer.id='contact-container';
-    
+    const contactContainer = generateContactPage();
    loadThePageContainer(contactContainer);
 });
