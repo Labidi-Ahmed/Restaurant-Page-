@@ -52,7 +52,9 @@ body{
 background-color: rgb(255, 255, 255);;
 
 display: grid;
-min-height: 250vh;
+
+height: 300vh;
+
 
 gap: 5%;
 overflow-x: hidden;
@@ -694,16 +696,45 @@ iframe{
    
 }
 
-@media ( height <= 850px ) {
+@media ( height <= 700px ) {
  
     
  body{
+    height: 400vh;
  }
 
 
 
 }
 
+
+
+@media ( height <= 588px ) {
+ 
+    
+    body{
+       height: 700vh;
+    }
+   
+   
+   
+   }
+
+   
+
+
+   
+
+@media ( height <=  320px ) {
+ 
+    
+    body{
+       height: 800vh;
+    }
+   
+   
+   
+   }
 
 @media (width <= 972px){
     #contact-container{
