@@ -52,7 +52,7 @@ body{
 background-color: rgb(255, 255, 255);;
 
 display: grid;
-height: 250vh;
+min-height: 250vh;
 
 gap: 5%;
 overflow-x: hidden;
@@ -317,13 +317,14 @@ footer div {
 }
 
 .chef{
-    height:60% ;
-    width: 90%;
     
-    max-height: 700px;
+    
+    width: 100%;
+    
+    max-height: 500px;
     min-width: 300px;
-    min-height: 450px;
-    max-width: 600px;
+    min-height: 350px;
+    max-width: 470px;
 }
 .chef-image-container{
    display: flex;
@@ -337,7 +338,7 @@ footer div {
 #menu-container{
     grid-row: 2/3;
     display: grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
     
     font-family: var(--font2);
     justify-items: center;
@@ -649,7 +650,7 @@ iframe{
         
     }
     body{
-        height: 300vh;
+        
     }
    svg{
     height: 50px;
@@ -697,7 +698,6 @@ iframe{
  
     
  body{
-    height: 370vh;
  }
 
 
